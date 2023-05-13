@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ "edge" ]
+  pull_request:
+    branches: [ "edge" ]
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+    
+      - name: Lua Busted
+        uses: lunarmodules/busted@v2.1.2
