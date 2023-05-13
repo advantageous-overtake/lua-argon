@@ -1,0 +1,5 @@
+return {
+  default = {
+    pattern = "^[a-z_-]+.test.lua$"
+  }
+}
