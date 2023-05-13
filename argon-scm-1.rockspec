@@ -1,13 +1,12 @@
 package = "argon"
 version = "scm-1"
 source = {
-   url = "git://github.com/wfrsk/lua-argon",
-   tag = "v0.1"
+   url = "git://github.com/wfrsk/lua-argon"
 }
 description = {
    homepage = "https://argon.docs.wfrsk.dev",
    license = "GPL-3.0",
-   summary = "A tiny, performant and hackable command-line parsing library."
+   summary = "Smart, short, and simple CLI (or not!) argument parser for Lua5.X."
 }
 dependencies = {
    "lua >= 5.1, < 5.5",
