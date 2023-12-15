@@ -45,7 +45,7 @@ local function build_parser(defined_options)
           "argon.parser: missmatch between param type and param default value.") and param_definition.default_value or
         false
       elseif param_definition.type == "string" then
-        parse_result[param_name] = assert(type(param_definition.default_value) == param_definition.type,
+        parse_result[param_name] = assert(type(param_definition.default_value) == param_definition.type or param_definition.default_value == nil,
           "argon.parser: missmatch between param type and param default value.") and param_definition.default_value
       end
     end
