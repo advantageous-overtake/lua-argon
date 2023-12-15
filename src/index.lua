@@ -28,7 +28,7 @@ local function build_parser(defined_options)
   end
 
   local function parse_routine(target_arguments)
-    assert( type( target_arguments ) == "table" and target_arguments ~= nil )
+    assert( type( target_arguments ) == "table" or target_arguments == nil )
 
     target_arguments = ( type(target_arguments) == "table" and target_arguments ) or arg
 
